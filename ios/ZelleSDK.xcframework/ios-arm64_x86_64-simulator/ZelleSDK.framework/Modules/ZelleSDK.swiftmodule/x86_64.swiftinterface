@@ -1,0 +1,236 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ZelleSDK
+import AVFoundation
+import SystemConfiguration.CaptiveNetwork
+import Contacts
+import ContactsUI
+import CoreLocation
+import CoreTelephony
+import Foundation
+import Photos
+import Swift
+import SystemConfiguration
+import UIKit
+import WebKit
+@_exported import ZelleSDK
+@objc public class QRCodeReaderViewController : UIKit.UIViewController {
+  public var codeReader: ZelleSDK.QRCodeReader {
+    get
+  }
+  weak public var delegate: ZelleSDK.QRCodeReaderViewControllerDelegate?
+  public var completionBlock: ((ZelleSDK.QRCodeReaderResult?) -> Swift.Void)?
+  @objc deinit
+  required public init(builder: ZelleSDK.QRCodeReaderViewControllerBuilder)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @objc override dynamic public func viewWillLayoutSubviews()
+  @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
+    @objc get
+  }
+  public func startScanning()
+  public func stopScanning()
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+}
+extension UIViewController {
+  public func addActionSheetForiPad(actionSheet: UIKit.UIAlertController)
+}
+@objc @_inheritsConvenienceInitializers final public class QRCodeReaderView : UIKit.UIView, ZelleSDK.QRCodeReaderDisplayable {
+  final public var overlayView: ZelleSDK.QRCodeReaderViewOverlay? {
+    get
+    set
+  }
+  final public let cameraView: UIKit.UIView
+  final public var cancelButton: UIKit.UIButton? {
+    get
+    set
+  }
+  final public var switchCameraButton: UIKit.UIButton? {
+    get
+    set
+  }
+  final public var toggleTorchButton: UIKit.UIButton? {
+    get
+    set
+  }
+  final public func setupComponents(with builder: ZelleSDK.QRCodeReaderViewControllerBuilder)
+  @objc override final public func layoutSubviews()
+  @objc final public func setNeedsUpdateOrientation()
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public class Bridge {
+  public init(config: ZelleSDK.BridgeConfig, viewController: UIKit.UIViewController)
+  public func view(frame: CoreGraphics.CGRect) -> ZelleSDK.BridgeView
+  public func popup(anchor: UIKit.UIView) -> ZelleSDK.BridgePopup
+  @objc deinit
+}
+public struct Contacts : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+@objc @_hasMissingDesignatedInitializers public class BridgeView : UIKit.UIView, WebKit.WKNavigationDelegate {
+  public init(frame: CoreGraphics.CGRect, config: ZelleSDK.BridgeConfig, viewController: UIKit.UIViewController)
+  @objc override dynamic public func removeFromSuperview()
+  @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @objc public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
+  @objc public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: Swift.Error)
+  public func load()
+  public func evaluate(JS: Swift.String, completionHandler: ((Any?, Swift.Error?) -> Swift.Void)? = nil)
+  public func saveCachedContacts(cachedContacts: Swift.String)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable final public class ToggleTorchButton : UIKit.UIButton {
+  @objc override final public func draw(_ rect: CoreGraphics.CGRect)
+  @objc override final public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc override final public func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc override final public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc override final public func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>?, with event: UIKit.UIEvent?)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum QRCodeReaderViewOverlayState {
+  case normal
+  case valid
+  case wrong
+  public static func == (a: ZelleSDK.QRCodeReaderViewOverlayState, b: ZelleSDK.QRCodeReaderViewOverlayState) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public protocol QRCodeReaderViewOverlay : UIKit.UIView {
+  func setState(_ state: ZelleSDK.QRCodeReaderViewOverlayState)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class ReaderOverlayView : UIKit.UIView {
+  final public var defaultColor: UIKit.UIColor
+  final public var highlightValidColor: UIKit.UIColor
+  final public var highlightWrongColor: UIKit.UIColor
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override final public func draw(_ rect: CoreGraphics.CGRect)
+  @objc deinit
+}
+extension ReaderOverlayView : ZelleSDK.QRCodeReaderViewOverlay {
+  final public func setState(_ state: ZelleSDK.QRCodeReaderViewOverlayState)
+}
+final public class QRCodeReaderViewControllerBuilder {
+  public typealias QRCodeReaderViewControllerBuilderBlock = (ZelleSDK.QRCodeReaderViewControllerBuilder) -> Swift.Void
+  final public var cancelButtonTitle: Swift.String
+  final public var reader: ZelleSDK.QRCodeReader
+  final public var readerView: ZelleSDK.QRCodeReaderContainer
+  final public var startScanningAtLoad: Swift.Bool
+  final public var showCancelButton: Swift.Bool
+  final public var showSwitchCameraButton: Swift.Bool {
+    get
+    set
+  }
+  final public var showTorchButton: Swift.Bool {
+    get
+    set
+  }
+  final public var showOverlayView: Swift.Bool
+  final public var handleOrientationChange: Swift.Bool
+  final public var preferredStatusBarStyle: UIKit.UIStatusBarStyle?
+  final public var rectOfInterest: CoreGraphics.CGRect {
+    get
+    set
+  }
+  public init()
+  public init(buildBlock: (ZelleSDK.QRCodeReaderViewControllerBuilder) -> Swift.Void)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable final public class SwitchCameraButton : UIKit.UIButton {
+  @objc override final public func draw(_ rect: CoreGraphics.CGRect)
+  @objc override final public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc override final public func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc override final public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc override final public func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>?, with event: UIKit.UIEvent?)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct QRCodeReaderResult {
+  public let value: Swift.String
+  public let metadataType: Swift.String
+}
+@objc @_hasMissingDesignatedInitializers public class BridgePopup : UIKit.UIView {
+  public var bridgeView: ZelleSDK.BridgeView {
+    get
+    set
+  }
+  public init(anchor: UIKit.UIView, config: ZelleSDK.BridgeConfig, viewController: UIKit.UIViewController)
+  public func load()
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc deinit
+}
+public protocol BridgeConfig {
+  var url: Swift.String { get set }
+  var preCacheContacts: Swift.Bool { get set }
+}
+@_hasMissingDesignatedInitializers public class RawConfig : ZelleSDK.BridgeConfig {
+  public var url: Swift.String
+  public var preCacheContacts: Swift.Bool
+  @objc deinit
+}
+public class Zelle : ZelleSDK.BridgeConfig {
+  public var url: Swift.String
+  public var preCacheContacts: Swift.Bool
+  public init(applicationName: Swift.String? = nil, baseURL: Swift.String, institutionId: Swift.String, product: Swift.String, ssoKey: Swift.String, parameters: [Swift.String : Swift.String])
+  @objc deinit
+}
+public protocol QRCodeReaderDisplayable {
+  var cameraView: UIKit.UIView { get }
+  var cancelButton: UIKit.UIButton? { get }
+  var switchCameraButton: UIKit.UIButton? { get }
+  var toggleTorchButton: UIKit.UIButton? { get }
+  var overlayView: ZelleSDK.QRCodeReaderViewOverlay? { get }
+  func setNeedsUpdateOrientation()
+  func setupComponents(with builder: ZelleSDK.QRCodeReaderViewControllerBuilder)
+}
+public struct QRCodeReaderContainer {
+  public init<T>(displayable: T) where T : UIKit.UIView, T : ZelleSDK.QRCodeReaderDisplayable
+}
+public protocol QRCodeReaderViewControllerDelegate : AnyObject {
+  func reader(_ reader: ZelleSDK.QRCodeReaderViewController, didScanResult result: ZelleSDK.QRCodeReaderResult)
+  func reader(_ reader: ZelleSDK.QRCodeReaderViewController, didSwitchCamera newCaptureDevice: AVFoundation.AVCaptureDeviceInput)
+  func readerDidCancel(_ reader: ZelleSDK.QRCodeReaderViewController)
+}
+extension QRCodeReaderViewControllerDelegate {
+  public func reader(_ reader: ZelleSDK.QRCodeReaderViewController, didSwitchCamera newCaptureDevice: AVFoundation.AVCaptureDeviceInput)
+}
+@objc @_inheritsConvenienceInitializers final public class QRCodeReader : ObjectiveC.NSObject, AVFoundation.AVCaptureMetadataOutputObjectsDelegate {
+  final public let previewLayer: AVFoundation.AVCaptureVideoPreviewLayer
+  final public let metadataObjectTypes: [AVFoundation.AVMetadataObject.ObjectType]
+  final public var stopScanningWhenCodeIsFound: Swift.Bool
+  final public var didFindCode: ((ZelleSDK.QRCodeReaderResult) -> Swift.Void)?
+  final public var didFailDecoding: (() -> Swift.Void)?
+  @objc convenience override dynamic public init()
+  convenience public init(metadataObjectTypes types: [AVFoundation.AVMetadataObject.ObjectType])
+  convenience public init(captureDevicePosition position: AVFoundation.AVCaptureDevice.Position)
+  public init(metadataObjectTypes types: [AVFoundation.AVMetadataObject.ObjectType], captureDevicePosition: AVFoundation.AVCaptureDevice.Position)
+  @discardableResult
+  final public func switchDeviceInput() -> AVFoundation.AVCaptureDeviceInput?
+  final public func startScanning()
+  final public func stopScanning()
+  final public var isRunning: Swift.Bool {
+    get
+  }
+  final public var hasFrontDevice: Swift.Bool {
+    get
+  }
+  final public var isTorchAvailable: Swift.Bool {
+    get
+  }
+  final public func toggleTorch()
+  final public class func videoOrientation(deviceOrientation orientation: UIKit.UIDeviceOrientation, withSupportedOrientations supportedOrientations: UIKit.UIInterfaceOrientationMask, fallbackOrientation: AVFoundation.AVCaptureVideoOrientation? = nil) -> AVFoundation.AVCaptureVideoOrientation
+  final public class func isAvailable() -> Swift.Bool
+  final public class func supportsMetadataObjectTypes(_ metadataTypes: [AVFoundation.AVMetadataObject.ObjectType]? = nil) throws -> Swift.Bool
+  @objc final public func metadataOutput(_ output: AVFoundation.AVCaptureMetadataOutput, didOutput metadataObjects: [AVFoundation.AVMetadataObject], from connection: AVFoundation.AVCaptureConnection)
+  @objc deinit
+}
+extension ZelleSDK.QRCodeReaderViewOverlayState : Swift.Equatable {}
+extension ZelleSDK.QRCodeReaderViewOverlayState : Swift.Hashable {}
