@@ -8,19 +8,19 @@
 import Foundation
 import ZelleSDK
 import UIKit
-
-
-//var RCTBridge = RCTBridgeModule()
+//import React.RCTBridgeModule No such module error
 
 @objc(MyModule)
-class MyModule: NSObject{
+class MyModule: NSObject
+//, GenericTagDelegate // cannot find this in scope, possibly because of outdated SDK
+{
 
   var callback: RCTResponseSenderBlock?
   @objc func NavigateToZelle(_ appName: String, baseUrl: String, instId: String, product: String, ssoKey:String, parameters: NSDictionary, pd: NSDictionary)
   {
     
-//  Bridge.genericTag = self
-//  self.callback = callback
+ // Bridge.genericTag = self // Bridge has no member genericTag
+ // self.callback = callback // assigning a property to itself
     
   NSLog("appname %@ baseUrl %@", parameters, pd);
     

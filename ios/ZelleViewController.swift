@@ -35,8 +35,8 @@ class ZelleViewController: UIViewController {
     
   let zelleFrame = CGRect(x:0, y:0, width:viewContainer.frame.width, height:viewContainer.frame.height) //desired location
     
-  let zelleView = bridge.view(frame: zelleFrame)
-  // let zelleView = bridge.popup(anchor: self.view)
+//  let zelleView = bridge.view(frame: zelleFrame)
+   let zelleView = bridge.popup(anchor: self.view)
 
     
   view.addSubview(zelleView) }
