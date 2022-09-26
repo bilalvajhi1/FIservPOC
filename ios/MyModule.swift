@@ -8,7 +8,7 @@
 import Foundation
 import ZelleSDK
 import UIKit
-//import React.RCTBridgeModule No such module error
+//import React.RCTBridgeModule
 
 @objc(MyModule)
 class MyModule: NSObject

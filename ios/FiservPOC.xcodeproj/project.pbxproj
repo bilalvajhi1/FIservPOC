@@ -14,8 +14,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-FiservPOC-FiservPOCTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-FiservPOC-FiservPOCTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		82DB92F428BFE248000CAF60 /* ZelleSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DB92F228BFE23E000CAF60 /* ZelleSDK.xcframework */; };
-		82DB92F528BFE248000CAF60 /* ZelleSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 82DB92F228BFE23E000CAF60 /* ZelleSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8211E23828DE274000D887DA /* ZelleSDK 2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8211E23628DE272600D887DA /* ZelleSDK 2.xcframework */; };
+		8211E23928DE274000D887DA /* ZelleSDK 2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8211E23628DE272600D887DA /* ZelleSDK 2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		82DB92F828BFE2D7000CAF60 /* MyModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DB92F728BFE2D7000CAF60 /* MyModule.m */; };
 		82DB92FB28BFE346000CAF60 /* MyModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DB92FA28BFE346000CAF60 /* MyModule.swift */; };
 		82DB92FD28BFE417000CAF60 /* ZelleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DB92FC28BFE417000CAF60 /* ZelleViewController.swift */; };
@@ -39,7 +39,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				82DB92F528BFE248000CAF60 /* ZelleSDK.xcframework in Embed Frameworks */,
+				8211E23928DE274000D887DA /* ZelleSDK 2.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +62,7 @@
 		5B7EB9410499542E8C5724F5 /* Pods-FiservPOC-FiservPOCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiservPOC-FiservPOCTests.debug.xcconfig"; path = "Target Support Files/Pods-FiservPOC-FiservPOCTests/Pods-FiservPOC-FiservPOCTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-FiservPOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FiservPOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FiservPOC/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		82DB92F228BFE23E000CAF60 /* ZelleSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ZelleSDK.xcframework; sourceTree = "<group>"; };
+		8211E23628DE272600D887DA /* ZelleSDK 2.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "ZelleSDK 2.xcframework"; sourceTree = "<group>"; };
 		82DB92F728BFE2D7000CAF60 /* MyModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyModule.m; sourceTree = "<group>"; };
 		82DB92F928BFE345000CAF60 /* FiservPOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FiservPOC-Bridging-Header.h"; sourceTree = "<group>"; };
 		82DB92FA28BFE346000CAF60 /* MyModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModule.swift; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C80B921A6F3F58F76C31292 /* libPods-FiservPOC.a in Frameworks */,
-				82DB92F428BFE248000CAF60 /* ZelleSDK.xcframework in Frameworks */,
+				8211E23828DE274000D887DA /* ZelleSDK 2.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +113,7 @@
 		13B07FAE1A68108700A75B9A /* FiservPOC */ = {
 			isa = PBXGroup;
 			children = (
-				82DB92F228BFE23E000CAF60 /* ZelleSDK.xcframework */,
+				8211E23628DE272600D887DA /* ZelleSDK 2.xcframework */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,

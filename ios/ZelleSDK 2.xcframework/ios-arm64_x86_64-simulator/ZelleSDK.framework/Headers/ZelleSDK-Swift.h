@@ -212,25 +212,59 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@protocol GenericTagDelegate;
+@protocol BridgeConfig;
+@class UIViewController;
+@class BridgeView;
+@class BridgePopup;
+
+SWIFT_CLASS("_TtC8ZelleSDK6Bridge")
+@interface Bridge : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <GenericTagDelegate> _Nullable genericTag;)
++ (id <GenericTagDelegate> _Nullable)genericTag SWIFT_WARN_UNUSED_RESULT;
++ (void)setGenericTag:(id <GenericTagDelegate> _Nullable)value;
+- (nonnull instancetype)initWithConfig:(id <BridgeConfig> _Nonnull)config viewController:(UIViewController * _Nonnull)viewController OBJC_DESIGNATED_INITIALIZER;
+- (BridgeView * _Nonnull)view SWIFT_WARN_UNUSED_RESULT;
+- (BridgeView * _Nonnull)viewWithFrame:(CGRect)frame SWIFT_WARN_UNUSED_RESULT;
+- (BridgePopup * _Nonnull)popup SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL("_TtP8ZelleSDK12BridgeConfig_")
+@protocol BridgeConfig
+@property (nonatomic, copy) NSString * _Nonnull url;
+@property (nonatomic) BOOL preCacheContacts;
+@end
+
 @class NSCoder;
 
 SWIFT_CLASS("_TtC8ZelleSDK11BridgePopup")
-@interface BridgePopup : UIView
+@interface BridgePopup : UIView <UIGestureRecognizerDelegate>
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+- (void)anchorTo:(UIView * _Nonnull)parent;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
 @class WKWebView;
-@class WKNavigation;
+@class WKWebViewConfiguration;
+@class WKNavigationAction;
+@class WKWindowFeatures;
 
 SWIFT_CLASS("_TtC8ZelleSDK10BridgeView")
-@interface BridgeView : UIView <WKNavigationDelegate>
+@interface BridgeView : UIView <WKUIDelegate>
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+- (void)fill:(UIView * _Nonnull)parent;
 - (void)removeFromSuperview;
-- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
-- (void)webView:(WKWebView * _Nonnull)webView didStartProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation;
-- (void)webView:(WKWebView * _Nonnull)webView didFailNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
+- (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_PROTOCOL("_TtP8ZelleSDK18GenericTagDelegate_")
+@protocol GenericTagDelegate
+- (void)sessionTagWithName:(NSString * _Nonnull)name;
 @end
 
 @class AVCaptureMetadataOutput;
@@ -308,6 +342,16 @@ SWIFT_CLASS("_TtC8ZelleSDK17ToggleTorchButton")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+
+SWIFT_CLASS("_TtC8ZelleSDK5Zelle")
+@interface Zelle : NSObject <BridgeConfig>
+@property (nonatomic, copy) NSString * _Nonnull url;
+@property (nonatomic) BOOL preCacheContacts;
+- (nonnull instancetype)initWithApplicationName:(NSString * _Nullable)applicationName baseURL:(NSString * _Nonnull)baseURL institutionId:(NSString * _Nonnull)institutionId product:(NSString * _Nonnull)product ssoKey:(NSString * _Nonnull)ssoKey parameters:(NSDictionary<NSString *, NSString *> * _Nullable)parameters OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -528,25 +572,59 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@protocol GenericTagDelegate;
+@protocol BridgeConfig;
+@class UIViewController;
+@class BridgeView;
+@class BridgePopup;
+
+SWIFT_CLASS("_TtC8ZelleSDK6Bridge")
+@interface Bridge : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <GenericTagDelegate> _Nullable genericTag;)
++ (id <GenericTagDelegate> _Nullable)genericTag SWIFT_WARN_UNUSED_RESULT;
++ (void)setGenericTag:(id <GenericTagDelegate> _Nullable)value;
+- (nonnull instancetype)initWithConfig:(id <BridgeConfig> _Nonnull)config viewController:(UIViewController * _Nonnull)viewController OBJC_DESIGNATED_INITIALIZER;
+- (BridgeView * _Nonnull)view SWIFT_WARN_UNUSED_RESULT;
+- (BridgeView * _Nonnull)viewWithFrame:(CGRect)frame SWIFT_WARN_UNUSED_RESULT;
+- (BridgePopup * _Nonnull)popup SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL("_TtP8ZelleSDK12BridgeConfig_")
+@protocol BridgeConfig
+@property (nonatomic, copy) NSString * _Nonnull url;
+@property (nonatomic) BOOL preCacheContacts;
+@end
+
 @class NSCoder;
 
 SWIFT_CLASS("_TtC8ZelleSDK11BridgePopup")
-@interface BridgePopup : UIView
+@interface BridgePopup : UIView <UIGestureRecognizerDelegate>
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+- (void)anchorTo:(UIView * _Nonnull)parent;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
 @class WKWebView;
-@class WKNavigation;
+@class WKWebViewConfiguration;
+@class WKNavigationAction;
+@class WKWindowFeatures;
 
 SWIFT_CLASS("_TtC8ZelleSDK10BridgeView")
-@interface BridgeView : UIView <WKNavigationDelegate>
+@interface BridgeView : UIView <WKUIDelegate>
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+- (void)fill:(UIView * _Nonnull)parent;
 - (void)removeFromSuperview;
-- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
-- (void)webView:(WKWebView * _Nonnull)webView didStartProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation;
-- (void)webView:(WKWebView * _Nonnull)webView didFailNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
+- (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_PROTOCOL("_TtP8ZelleSDK18GenericTagDelegate_")
+@protocol GenericTagDelegate
+- (void)sessionTagWithName:(NSString * _Nonnull)name;
 @end
 
 @class AVCaptureMetadataOutput;
@@ -624,6 +702,16 @@ SWIFT_CLASS("_TtC8ZelleSDK17ToggleTorchButton")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+
+SWIFT_CLASS("_TtC8ZelleSDK5Zelle")
+@interface Zelle : NSObject <BridgeConfig>
+@property (nonatomic, copy) NSString * _Nonnull url;
+@property (nonatomic) BOOL preCacheContacts;
+- (nonnull instancetype)initWithApplicationName:(NSString * _Nullable)applicationName baseURL:(NSString * _Nonnull)baseURL institutionId:(NSString * _Nonnull)institutionId product:(NSString * _Nonnull)product ssoKey:(NSString * _Nonnull)ssoKey parameters:(NSDictionary<NSString *, NSString *> * _Nullable)parameters OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

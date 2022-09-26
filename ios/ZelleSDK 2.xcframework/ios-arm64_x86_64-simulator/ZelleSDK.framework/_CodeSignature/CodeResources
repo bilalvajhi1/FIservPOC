@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ZelleSDK-Swift.h</key>
 		<data>
-		T7wcCoTo0/kII1G2i+d59hYaunA=
+		XFtQtlTR4lrjUyBO/U8iOY4QSwg=
 		</data>
 		<key>Headers/ZelleSDK.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		as0hqkh51PZxINO6RWGyZ7qEiII=
+		BmZZSCdTYbdfUFJoD+2FYbmJDdU=
 		</data>
 		<key>Modules/ZelleSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/ZelleSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3y8/buUoav+egBAxdp/nB/F7uvg=
+		MWCEpALbxpx/IFZHWRwsR2Qvl/s=
 		</data>
 		<key>Modules/ZelleSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		cGdMqESq6XIoOkYeem3uSYAq5XQ=
+		48H1veSoe8JsAFo31W0OxJmuaNk=
 		</data>
 		<key>Modules/ZelleSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/ZelleSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		3y8/buUoav+egBAxdp/nB/F7uvg=
+		MWCEpALbxpx/IFZHWRwsR2Qvl/s=
 		</data>
 		<key>Modules/ZelleSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		cGdMqESq6XIoOkYeem3uSYAq5XQ=
+		48H1veSoe8JsAFo31W0OxJmuaNk=
 		</data>
 		<key>Modules/ZelleSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/ZelleSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		4+keJxRDEZfhuEy6sJnm64bJ+Gs=
+		DiTw/Kd8Pvs2S8GNKkp7cxRo1JQ=
 		</data>
 		<key>Modules/ZelleSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Svm6j6mBLoWzVTRnj1g6PsEjA44=
+		clXhKJ7B+SWU1+BmAPusqopDTZM=
 		</data>
 		<key>Modules/ZelleSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/ZelleSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		4+keJxRDEZfhuEy6sJnm64bJ+Gs=
+		DiTw/Kd8Pvs2S8GNKkp7cxRo1JQ=
 		</data>
 		<key>Modules/ZelleSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		Svm6j6mBLoWzVTRnj1g6PsEjA44=
+		clXhKJ7B+SWU1+BmAPusqopDTZM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,7 +75,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YE7vZef+0+oWrcVEtEt4krAQ7rjZxkWEAlynT0aUXrA=
+			a1TkHeTa3Ky2RyWvoDagb2hfwEvyPh+y0lu9SK/A/rg=
 			</data>
 		</dict>
 		<key>Headers/ZelleSDK.h</key>
@@ -96,14 +96,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xDOR0Gf7AUoT2gT3v3cfBXhOFl+AacyTHlPdVPjGqfc=
+			AYZatSuPmaLtvZfBzLXfD7/JZ+UL6yp2jE3y/qKbf3g=
 			</data>
 		</dict>
 		<key>Modules/ZelleSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fCxo87kPvZtkzdtdXhkdOTq3yw9/Cc29bhFBWiKYE8s=
+			o3zacWIR8Ujz+sEG3F6u3OOjuv13lwzZMTTPBYuPYUI=
 			</data>
 		</dict>
 		<key>Modules/ZelleSDK.swiftmodule/arm64.swiftdoc</key>
@@ -117,14 +117,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xDOR0Gf7AUoT2gT3v3cfBXhOFl+AacyTHlPdVPjGqfc=
+			AYZatSuPmaLtvZfBzLXfD7/JZ+UL6yp2jE3y/qKbf3g=
 			</data>
 		</dict>
 		<key>Modules/ZelleSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fCxo87kPvZtkzdtdXhkdOTq3yw9/Cc29bhFBWiKYE8s=
+			o3zacWIR8Ujz+sEG3F6u3OOjuv13lwzZMTTPBYuPYUI=
 			</data>
 		</dict>
 		<key>Modules/ZelleSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -138,14 +138,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b4xtsTYvWNzhOKFiEKcmdIEDXWFC8lRbzej433ZLuUk=
+			5yo46wqjQL+H1KTidYLy2k+gnpZuNFI8DxRnrIMCUD4=
 			</data>
 		</dict>
 		<key>Modules/ZelleSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZYxHL6JDMjvh4G+wVKklWfAhRUPKt4f8t0ZJP6+lzhg=
+			pMDT7/jPkxttN2JR32uFKRYioiLq2486aT57NQmIfz8=
 			</data>
 		</dict>
 		<key>Modules/ZelleSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -159,14 +159,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b4xtsTYvWNzhOKFiEKcmdIEDXWFC8lRbzej433ZLuUk=
+			5yo46wqjQL+H1KTidYLy2k+gnpZuNFI8DxRnrIMCUD4=
 			</data>
 		</dict>
 		<key>Modules/ZelleSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZYxHL6JDMjvh4G+wVKklWfAhRUPKt4f8t0ZJP6+lzhg=
+			pMDT7/jPkxttN2JR32uFKRYioiLq2486aT57NQmIfz8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

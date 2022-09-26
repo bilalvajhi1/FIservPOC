@@ -8,7 +8,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
 import com.fiserv.dps.mobile.sdk.bridge.controller.Bridge;
-//import com.fiserv.dps.mobile.sdk.interfaces.GenericTag;
+//import com.fiserv.dps.mobile.sdk.
 //Implementing GenericTag for session timeout
 public class MyModule extends ReactContextBaseJavaModule  {
     ReactApplicationContext context = getReactApplicationContext();
