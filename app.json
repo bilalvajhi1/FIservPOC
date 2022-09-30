@@ -1,9 +1,10 @@
+/*eslint-disable */
 {
   "name": "FiservPOC",
   "displayName": "FiservPOC",
   "ios": {
     "supportsTablet": true,
-    "bundleIdentifier": "your_package_name",
+    "bundleIdentifier": "FiservPOC",
     "buildNumber": "1.0.0"
   },
   "android": {
@@ -11,7 +12,8 @@
       "foregroundImage": "./assets/adaptive-icon.png",
       "backgroundColor": "#FFFFFF"
     },
-    "package": "your_package_name",
+    "package": "FiservPOC",
     "versionCode": 1
   }
 }
+
