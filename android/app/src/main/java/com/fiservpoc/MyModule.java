@@ -9,6 +9,7 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
 import com.fiserv.dps.mobile.sdk.bridge.controller.Bridge;
 import com.fiserv.dps.mobile.sdk.interfaces.GenericTag;
+//import com.fiservpoc.LaunchZelleActivity;
 
 
 public class MyModule extends ReactContextBaseJavaModule implements GenericTag {
@@ -34,7 +35,7 @@ public class MyModule extends ReactContextBaseJavaModule implements GenericTag {
 
         Bridge.genericTag = this;
 
-        Intent intent = new Intent(context, LaunchZelleActivity.class); //error: cannot find symbol Intent intent = new Intent(context, LaunchZelleActivity.class);
+        Intent intent = new Intent(context, ZelleActivityLaunch.class); //error: cannot find symbol Intent intent = new Intent(context, LaunchZelleActivity.class);
 
         if (intent.resolveActivity(context.getPackageManager()) != null) {
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
