@@ -16,6 +16,7 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8211E23828DE274000D887DA /* ZelleSDK 2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8211E23628DE272600D887DA /* ZelleSDK 2.xcframework */; };
 		8211E23928DE274000D887DA /* ZelleSDK 2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8211E23628DE272600D887DA /* ZelleSDK 2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8240B6D228F854C4002368FE /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8240B6D128F854C4002368FE /* NewViewController.swift */; };
 		82DB92F828BFE2D7000CAF60 /* MyModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DB92F728BFE2D7000CAF60 /* MyModule.m */; };
 		82DB92FB28BFE346000CAF60 /* MyModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DB92FA28BFE346000CAF60 /* MyModule.swift */; };
 		82DB92FD28BFE417000CAF60 /* ZelleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DB92FC28BFE417000CAF60 /* ZelleViewController.swift */; };
@@ -63,6 +64,7 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-FiservPOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FiservPOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FiservPOC/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8211E23628DE272600D887DA /* ZelleSDK 2.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "ZelleSDK 2.xcframework"; sourceTree = "<group>"; };
+		8240B6D128F854C4002368FE /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		82DB92F728BFE2D7000CAF60 /* MyModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyModule.m; sourceTree = "<group>"; };
 		82DB92F928BFE345000CAF60 /* FiservPOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FiservPOC-Bridging-Header.h"; sourceTree = "<group>"; };
 		82DB92FA28BFE346000CAF60 /* MyModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModule.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				82DB92F928BFE345000CAF60 /* FiservPOC-Bridging-Header.h */,
 				82DB92FC28BFE417000CAF60 /* ZelleViewController.swift */,
 				82E5F81928CFB1860040CEA5 /* Main.storyboard */,
+				8240B6D128F854C4002368FE /* NewViewController.swift */,
 			);
 			name = FiservPOC;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				82DB92FD28BFE417000CAF60 /* ZelleViewController.swift in Sources */,
 				82DB92FB28BFE346000CAF60 /* MyModule.swift in Sources */,
+				8240B6D228F854C4002368FE /* NewViewController.swift in Sources */,
 				82DB92F828BFE2D7000CAF60 /* MyModule.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);

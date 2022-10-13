@@ -8,34 +8,36 @@
 import Foundation
 import ZelleSDK
 import UIKit
-//import React.RCTBridgeModule
+
 
 @objc(MyModule)
 class MyModule: NSObject
-//, GenericTagDelegate // cannot find this in scope, possibly because of outdated SDK
+//                  GenericTagDelegate // cannot find this in scope, possibly because of outdated SDK
 {
 
   var callback: RCTResponseSenderBlock?
-  @objc func NavigateToZelle(_ appName: String, baseUrl: String, instId: String, product: String, ssoKey:String, parameters: NSDictionary, pd: NSDictionary)
+  @objc func NavigateToZelle(
+//                             appName: String, baseUrl: String, instId: String, product: String, ssoKey:String, parameters: NSDictionary, pd: NSDictionary
+  )
   {
     
- // Bridge.genericTag = self // Bridge has no member genericTag
- // self.callback = callback // assigning a property to itself
+//  Bridge.genericTag = self // Bridge has no member genericTag
+//  self.callback = callback // assigning a property to itself
     
-  NSLog("appname %@ baseUrl %@", parameters, pd);
+//  NSLog("appname %@ baseUrl %@", parameters, pd);
     
   DispatchQueue.main.async {
     
   let storyboard = UIStoryboard(name: "Main", bundle: nil)
-  let secondVC: ZelleViewController = storyboard.instantiateViewController(withIdentifier:
-  "ZelleViewController") as! ZelleViewController
+  let secondVC: NewViewController = storyboard.instantiateViewController(withIdentifier:
+  "NewViewController") as! NewViewController
     
-    secondVC.applicationName = appName
-    secondVC.baseUrl = baseUrl
-    secondVC.institutionId = instId
-    secondVC.product = product
-    secondVC.ssoKey = ssoKey
-    secondVC.parameters = parameters
+//    secondVC.applicationName = appName
+//    secondVC.baseUrl = baseUrl
+//    secondVC.institutionId = instId
+//    secondVC.product = product
+//    secondVC.ssoKey = ssoKey
+//    secondVC.parameters = parameters
     
   UIApplication.shared.keyWindow?.rootViewController?.present(secondVC, animated: true, completion: nil) }
   }
