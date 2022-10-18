@@ -3,6 +3,9 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, RCTBridgeDelegate>
 
-@property (nonatomic, strong) UIWindow *window;
+@property (strong, nonatomic) UIWindow *window;
+
+//- (void) setInitialViewController;
+//- (void) goToRegisterView; // called from the RCTBridge module
 
 @end

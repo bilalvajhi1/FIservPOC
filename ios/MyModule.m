@@ -14,3 +14,5 @@
 RCT_EXTERN_METHOD(NavigateToZelle: (NSString *)appName baseUrl:(NSString *)baseUrl instId:(NSString *)instId product:(NSString *)product ssoKey:(NSString *)ssoKey parameters:(NSDictionary *)parameters pd:(NSDictionary *)pd callback:(RCTResponseSenderBlock)callback)
 
 @end
+
+

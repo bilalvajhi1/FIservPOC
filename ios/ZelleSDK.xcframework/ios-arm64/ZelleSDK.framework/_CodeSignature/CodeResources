@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ZelleSDK-Swift.h</key>
 		<data>
-		XFtQtlTR4lrjUyBO/U8iOY4QSwg=
+		gfnAVOJJVXxEsHmd1v+S9ueMXzw=
 		</data>
 		<key>Headers/ZelleSDK.h</key>
 		<data>
@@ -14,55 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		BmZZSCdTYbdfUFJoD+2FYbmJDdU=
+		vnE6d9pmYKBuvcnkKcvv/Klm5DE=
 		</data>
-		<key>Modules/ZelleSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/ZelleSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		cUr5kMYFY2ircQR0klBIHkWB0kg=
+		0WofjucC2HwCWhfu2QV1Y1+ezZw=
 		</data>
-		<key>Modules/ZelleSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/ZelleSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		MWCEpALbxpx/IFZHWRwsR2Qvl/s=
+		iv9o8gA0rHIOqxM8895HD7osMZs=
 		</data>
-		<key>Modules/ZelleSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/ZelleSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		48H1veSoe8JsAFo31W0OxJmuaNk=
+		YegWg7RpLaakv05UTiehlh4Wo0A=
 		</data>
 		<key>Modules/ZelleSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		cUr5kMYFY2ircQR0klBIHkWB0kg=
+		0WofjucC2HwCWhfu2QV1Y1+ezZw=
 		</data>
 		<key>Modules/ZelleSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		MWCEpALbxpx/IFZHWRwsR2Qvl/s=
+		iv9o8gA0rHIOqxM8895HD7osMZs=
 		</data>
 		<key>Modules/ZelleSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		48H1veSoe8JsAFo31W0OxJmuaNk=
-		</data>
-		<key>Modules/ZelleSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
-		<data>
-		R74hOG0lW8atgbXumihL61dmbOQ=
-		</data>
-		<key>Modules/ZelleSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
-		<data>
-		DiTw/Kd8Pvs2S8GNKkp7cxRo1JQ=
-		</data>
-		<key>Modules/ZelleSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<data>
-		clXhKJ7B+SWU1+BmAPusqopDTZM=
-		</data>
-		<key>Modules/ZelleSDK.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		R74hOG0lW8atgbXumihL61dmbOQ=
-		</data>
-		<key>Modules/ZelleSDK.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		DiTw/Kd8Pvs2S8GNKkp7cxRo1JQ=
-		</data>
-		<key>Modules/ZelleSDK.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		clXhKJ7B+SWU1+BmAPusqopDTZM=
+		YegWg7RpLaakv05UTiehlh4Wo0A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a1TkHeTa3Ky2RyWvoDagb2hfwEvyPh+y0lu9SK/A/rg=
+			pYraunwGf0OaOUuDuTJoV8Vh0WrYObjIJYyoedf+wI8=
 			</data>
 		</dict>
 		<key>Headers/ZelleSDK.h</key>
@@ -85,88 +61,46 @@
 			OIvRrC9w22soMXn4qt2wEu0By5zaw6Q6soru5LCLHJk=
 			</data>
 		</dict>
-		<key>Modules/ZelleSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/ZelleSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gjLznlxmSa03YeEsI26yQ50bK7u0hUev1u/hubCYIEY=
+			L1ZJ5s+kZ32mOcdSwzvP4JGX6frr0BQZ9aPCXNiBzsU=
 			</data>
 		</dict>
-		<key>Modules/ZelleSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/ZelleSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AYZatSuPmaLtvZfBzLXfD7/JZ+UL6yp2jE3y/qKbf3g=
+			7ZpfxD9+O3T02qvPIPiSuiS0YcY1yxSjkwG9aYychUA=
 			</data>
 		</dict>
-		<key>Modules/ZelleSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/ZelleSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o3zacWIR8Ujz+sEG3F6u3OOjuv13lwzZMTTPBYuPYUI=
+			vU6Y8TeGds2xt3Myh4gVgyHhH3tZu6+9JOOPffj6bNQ=
 			</data>
 		</dict>
 		<key>Modules/ZelleSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gjLznlxmSa03YeEsI26yQ50bK7u0hUev1u/hubCYIEY=
+			L1ZJ5s+kZ32mOcdSwzvP4JGX6frr0BQZ9aPCXNiBzsU=
 			</data>
 		</dict>
 		<key>Modules/ZelleSDK.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AYZatSuPmaLtvZfBzLXfD7/JZ+UL6yp2jE3y/qKbf3g=
+			7ZpfxD9+O3T02qvPIPiSuiS0YcY1yxSjkwG9aYychUA=
 			</data>
 		</dict>
 		<key>Modules/ZelleSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o3zacWIR8Ujz+sEG3F6u3OOjuv13lwzZMTTPBYuPYUI=
-			</data>
-		</dict>
-		<key>Modules/ZelleSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CzzMFzFs+cLQqnO6PZbIy38iN18EqZw9igxY3MnVz5g=
-			</data>
-		</dict>
-		<key>Modules/ZelleSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5yo46wqjQL+H1KTidYLy2k+gnpZuNFI8DxRnrIMCUD4=
-			</data>
-		</dict>
-		<key>Modules/ZelleSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			pMDT7/jPkxttN2JR32uFKRYioiLq2486aT57NQmIfz8=
-			</data>
-		</dict>
-		<key>Modules/ZelleSDK.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CzzMFzFs+cLQqnO6PZbIy38iN18EqZw9igxY3MnVz5g=
-			</data>
-		</dict>
-		<key>Modules/ZelleSDK.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5yo46wqjQL+H1KTidYLy2k+gnpZuNFI8DxRnrIMCUD4=
-			</data>
-		</dict>
-		<key>Modules/ZelleSDK.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			pMDT7/jPkxttN2JR32uFKRYioiLq2486aT57NQmIfz8=
+			vU6Y8TeGds2xt3Myh4gVgyHhH3tZu6+9JOOPffj6bNQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
